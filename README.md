@@ -2,6 +2,15 @@
 
 This repository describes SitePen code conventions and provides a compatible [.jshintrc](.jshintrc).
 
+## Table of Contents
+
+1. [Code conventions](#code-conventions)
+1. [Naming](#naming)
+1. [Style](#style)
+1. [Documentation](#documentation)
+1. [Linting](#linting)
+1. [Rationales](#rationales)
+
 ## Code conventions
 
 1. All code names and comments MUST be written in English.
@@ -106,6 +115,9 @@ The following naming conventions MUST be used:
    `if (event.keyCode === Keys.KEY_A)` or
    `if (event.keyCode === /* "a" */ 97)`).
 
+[⬆ back to top](#table-of-contents)
+
+
 ### Style
 
 Most style convention matters are addressed by the mandated jshint options.
@@ -169,6 +181,8 @@ Those that are not are listed here:
    booleans, not number).
 1. Files MUST end with an empty line.
 
+[⬆ back to top](#table-of-contents)
+
 
 ## Documentation
 
@@ -188,12 +202,17 @@ Those that are not are listed here:
 2. Shorthand reference to a property of a prototype MUST use hash notation.
    e.g. `foo/module/Constructor#fooFunction`.
 
+[⬆ back to top](#table-of-contents)
+
 
 ## Linting
 
 Code committed to this repository should follow the jshint rules given in the
 `.jshintrc` file. Unless otherwise noted, these options MUST NOT be overridden
 using `/*jshint*/`.
+
+[⬆ back to top](#table-of-contents)
+
 
 ### Rationales
 
@@ -387,3 +406,5 @@ using `/*jshint*/`.
   limit, `/*jshint*/` may be used within the function to increase the limit as
   long as a comment justifying the increase is also provided. Refactoring code
   that violates the complexity limit is preferred.
+
+[⬆ back to top](#table-of-contents)
